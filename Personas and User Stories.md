@@ -1,8 +1,8 @@
 
 <img alt="image" src="https://github.com/SazamAmmy/Software-Engineering-Sprints--OrionEngine-Ensemble/assets/159127703/3531a8f7-1a25-4c39-b83c-451ce750e446">
 
-
-# User 1: John Nick
+#User stories
+## User 1: John Nick
 
 1. **As a policy maker, John wants to access real-time updates or regularly scheduled updates to population data so that he can make informed decisions based on the most current and accurate information.**
 
@@ -17,8 +17,8 @@
 <img alt="image" src="https://github.com/SazamAmmy/Software-Engineering-Sprints--OrionEngine-Ensemble/assets/159127703/9de7d5cb-44ed-4a59-8b6e-4f0ecdb775ea">
 
 
-
-# User 2: Andreea Khan
+#User stories
+## User 2: Andreea Khan
 
 1. **As a researcher, Andreea wants to access a comprehensive and regularly updated population data repository so that she can obtain a broad spectrum of demographic information relevant to her urban development research.**
 
