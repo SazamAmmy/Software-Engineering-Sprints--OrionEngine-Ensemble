@@ -1,20 +1,35 @@
 
 <img alt="image" src="https://github.com/SazamAmmy/Software-Engineering-Sprints--OrionEngine-Ensemble/assets/159127703/3531a8f7-1a25-4c39-b83c-451ce750e446">
+
+
+# User 1: John Nick
+
+1. **As a policy maker, John wants to access real-time updates or regularly scheduled updates to population data so that he can make informed decisions based on the most current and accurate information.**
+
+2. **As a policy maker, John needs a data platform that prioritizes security and privacy to ensure that sensitive demographic information is protected from unauthorized access or breaches.**
+
+3. **As a policy maker, John requires access to comprehensive and up-to-date population data to make well-informed decisions that positively impact community members.**
+
+4. **As a policy maker, John wants to analyze demographic trends to optimize resource allocation, ensuring that resources are directed where they are most needed.**
+
+5. **As a policy maker, John needs the ability to filter and analyze population data based on specific criteria such as age and location to better understand and serve the needs of different demographics.**
+
 <img alt="image" src="https://github.com/SazamAmmy/Software-Engineering-Sprints--OrionEngine-Ensemble/assets/159127703/9de7d5cb-44ed-4a59-8b6e-4f0ecdb775ea">
 
 
 
+# User 2: Andreea Khan
 
-### User Stories
+1. **As a researcher, Andreea wants to access a comprehensive and regularly updated population data repository so that she can obtain a broad spectrum of demographic information relevant to her urban development research.**
 
-1. **As John, I want to view the latest population statistics, so that I can use accurate data to draft policies.**
+2. **As a researcher, Andreea needs to filter population data based on specific criteria so that she can customize her data queries and focus on the information that is most relevant to her projects.**
 
-2. **As John, I need to filter population data by age and location, so that I can target policies towards specific demographic groups.**
+3. **As a researcher, Andreea wants to compare population data across different regions and time periods so that she can understand trends and inform her urban development strategies.**
 
-3. **As John, I want to save and export my data queries, so that I can share them with my team for further discussion.**
+4. **As a researcher, Andreea aims to gain a holistic understanding of urban dynamics by exploring diverse population statistics so that she can contribute to informed urban development.**
 
-4. **As Andreea, I need to access historical population data, so that I can analyze trends over time for my research.**
+5. **As a researcher, Andreea needs tools for visualizing and exporting population data so that she can analyze the data in various formats and share her findings with colleagues and stakeholders.**
 
-5. **As Andreea, I want to compare population data between different regions, so that I can identify areas in need of urban development projects.**
+6. **As a researcher, Andreea seeks to explore the multifaceted aspects of urban life, from socio-economic factors to demographic trends, so that she can develop a more nuanced and comprehensive approach to urban planning.**
 
-6. **As Andreea, I need to create visual representations of population data, so that I can easily communicate my findings in presentations and reports.**
+
