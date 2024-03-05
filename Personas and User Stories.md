@@ -1,5 +1,6 @@
 
 <img alt="image" src="https://github.com/SazamAmmy/Software-Engineering-Sprints--OrionEngine-Ensemble/assets/159127703/3531a8f7-1a25-4c39-b83c-451ce750e446">
+
 # User stories
 ## User 2: Andreea Khan
 
