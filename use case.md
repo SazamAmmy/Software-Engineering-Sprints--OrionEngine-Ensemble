@@ -1,4 +1,4 @@
-<img alt="image" src="https://github.com/SazamAmmy/Software-Engineering-Sprints--OrionEngine-Ensemble/assets/159127703/8aa254b4-41fa-4a06-80e3-8717201c816e">
+<img alt="image" src="https://github.com/SazamAmmy/Software-Engineering-Sprints--OrionEngine-Ensemble/assets/159127703/8e9c8a60-4004-4478-bb19-23b0abf24195">
 
 
 
@@ -6,6 +6,7 @@
 
 
 **1. View Countries by Population**
+
 Actor: User
 Scenario:
 * User selects the option to view countries by population.
