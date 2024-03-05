@@ -40,3 +40,15 @@ Scenario:
 * System retrieves population data for districts in the specified country.
 * System organizes districts by population.
 * System generates and presents the report to the government official.
+
+**5. Use Case: Add New Dataset**
+- **Actor:** Administrator
+- **Scenario:**
+- Administrator logs into the system with appropriate credentials.
+- Administrator selects the option to add a new dataset.
+- System prompts the administrator to upload or input the new dataset.
+- Administrator provides the necessary information or uploads the dataset file.
+- System validates the dataset for consistency and correctness.
+- If validation is successful, the system adds the new dataset to the database.
+- System notifies the administrator of the successful addition of the new dataset.
+- If validation fails, the system informs the administrator of the issues and does not add the dataset.
