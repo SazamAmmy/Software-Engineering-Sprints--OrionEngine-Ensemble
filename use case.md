@@ -2,7 +2,7 @@
 
 
 
-###Use Cases
+### Use Cases
 
 
 **1. View Countries by Population**
