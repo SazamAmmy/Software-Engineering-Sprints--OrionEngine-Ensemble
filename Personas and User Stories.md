@@ -1,22 +1,5 @@
 
 <img alt="image" src="https://github.com/SazamAmmy/Software-Engineering-Sprints--OrionEngine-Ensemble/assets/159127703/3531a8f7-1a25-4c39-b83c-451ce750e446">
-
-# User stories
-## User 1: John Nick
-
-1. **As a policy maker, John wants to access real-time updates or regularly scheduled updates to population data so that he can make informed decisions based on the most current and accurate information.**
-
-2. **As a policy maker, John needs a data platform that prioritizes security and privacy to ensure that sensitive demographic information is protected from unauthorized access or breaches.**
-
-3. **As a policy maker, John requires access to comprehensive and up-to-date population data to make well-informed decisions that positively impact community members.**
-
-4. **As a policy maker, John wants to analyze demographic trends to optimize resource allocation, ensuring that resources are directed where they are most needed.**
-
-5. **As a policy maker, John needs the ability to filter and analyze population data based on specific criteria such as age and location to better understand and serve the needs of different demographics.**
-
-<img alt="image" src="https://github.com/SazamAmmy/Software-Engineering-Sprints--OrionEngine-Ensemble/assets/159127703/9de7d5cb-44ed-4a59-8b6e-4f0ecdb775ea">
-
-
 # User stories
 ## User 2: Andreea Khan
 
@@ -32,4 +15,21 @@
 
 6. **As a researcher, Andreea seeks to explore the multifaceted aspects of urban life, from socio-economic factors to demographic trends, so that she can develop a more nuanced and comprehensive approach to urban planning.**
 
+
+
+<img alt="image" src="https://github.com/SazamAmmy/Software-Engineering-Sprints--OrionEngine-Ensemble/assets/159127703/9de7d5cb-44ed-4a59-8b6e-4f0ecdb775ea">
+
+
+# User stories
+## User 1: John Nick
+
+1. **As a policy maker, John wants to access real-time updates or regularly scheduled updates to population data so that he can make informed decisions based on the most current and accurate information.**
+
+2. **As a policy maker, John needs a data platform that prioritizes security and privacy to ensure that sensitive demographic information is protected from unauthorized access or breaches.**
+
+3. **As a policy maker, John requires access to comprehensive and up-to-date population data to make well-informed decisions that positively impact community members.**
+
+4. **As a policy maker, John wants to analyze demographic trends to optimize resource allocation, ensuring that resources are directed where they are most needed.**
+
+5. **As a policy maker, John needs the ability to filter and analyze population data based on specific criteria such as age and location to better understand and serve the needs of different demographics.**
 
