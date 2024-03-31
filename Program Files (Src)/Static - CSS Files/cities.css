@@ -1,0 +1,38 @@
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 3rem auto;
+    margin-top: 8rem;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #dddada;
+}
+
+th {
+    padding-top: 20px;
+    padding-bottom: 24px;
+    background-color: #666;
+    text-align: center;
+    color: white;
+}
+
+.city-heading {
+    font-size: 300%;
+    text-align: center;
+    margin-top: 3rem;
+}
