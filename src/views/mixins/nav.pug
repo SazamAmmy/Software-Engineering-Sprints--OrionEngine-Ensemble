@@ -1,0 +1,14 @@
+mixin navigation(user)
+  nav.navbar
+    img(src="Group_Logo.png" alt="Logo" class="navbar-logo")
+    a(href='/') Home
+    a(href='/about_us') About Us
+    a(href='/contact_us') Contact Us
+    a(href='/cities') Cities
+    if user && user.isLoggedIn
+      if user.userType == 'Admin'
+        a(href='/admin_panel') Admin Panel
+      a(href='/logout') Logout
+    else
+      a(href='/login') Login
+      a(href='/signup') Sign Up

@@ -1,8 +1,7 @@
 {
   "scripts": {
-    "start": "index.js",
-    "dev": "nodemon -e index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node \"src/index.js\"",
+    "dev": "nodemon \"src/index.js\""
   },
   "dependencies": {
     "dotenv": "^16.4.5",
@@ -23,5 +22,6 @@
   "bugs": {
     "url": "https://github.com/SazamAmmy/Software-Engineering-Sprints--OrionEngine-Ensemble/issues"
   },
-  "homepage": "https://github.com/SazamAmmy/Software-Engineering-Sprints--OrionEngine-Ensemble#readme"
+  "homepage": "https://github.com/SazamAmmy/Software-Engineering-Sprints--OrionEngine-Ensemble#readme",
+  "keywords": []
 }
