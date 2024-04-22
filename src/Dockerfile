@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . .
 
 # Install dependencies (inside the container)
-RUN npm install && npm install supervisor -g && npm install concurrently -g
+RUN npm install -g supervisor && npm install
 
 # Expose server port
 EXPOSE 3000

@@ -1,9 +1,9 @@
-const { worldConnection } = require('./db.config.js');
+const userConnection = require('./db.config.js');
 
 async function testDatabaseConnection() {
     try {
         // Attempt to execute a simple query to test the database connection
-        const [rows] = await worldConnection.execute("SELECT 1");
+        const [rows] = await userConnection.execute("SELECT 1");
 
         // If the query succeeds, log a success message
         console.log("Test query successful. Rows:", rows);
@@ -12,7 +12,7 @@ async function testDatabaseConnection() {
         console.error("Error connecting to or querying the database:", error);
     } finally {
         // Regardless of the outcome, close the database connection
-        worldConnection.end();
+        userConnection.end();
         console.log("Database connection closed successfully.");
     }
 }

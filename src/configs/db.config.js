@@ -6,7 +6,7 @@ module.exports = {
     USER_HOST: process.env.USER_DATABASE_HOST || "localhost",
     USER_USER: "user_user",
     USER_PASSWORD: "user_password",
-    USER_DATABASE: "user",
+    USER_DATABASE: "world",
 };
 
 

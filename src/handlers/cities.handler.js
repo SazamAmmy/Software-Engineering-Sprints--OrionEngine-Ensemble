@@ -1,21 +1,17 @@
-const { worldConnection } = require('./db.js');
+const pool = require('./db.js');
 async function getAllCities(req, res) {
-    const query = "SELECT * FROM `city`";
-    try {
-        const [rows] = await worldConnection.execute(query);
+    const query = "SELECT * FROM `city` order by Population DESC;";
+        const [rows] = await pool.query(query);
         console.log(`Fetched ${rows.length} cities.`);
-        res.render('cities', { cities: rows });
-    } catch (err) {
-        console.error("Error querying cities from the database:", err.message);
-        res.status(500).render('500');
-    }
+        return rows;
+
 }
 
 async function getCityById(req, res) {
     const cityId = req.params.id;
     const query = "SELECT * FROM `city` WHERE ID = ?";
     try {
-        const [rows] = await worldConnection.execute(query, [cityId]);
+        const [rows] = await pool.execute(query, [cityId]);
         if (rows.length > 0) {
             console.log(`Fetched city with ID: ${cityId}`, rows[0]);
             res.render('city', { city: rows[0] });
@@ -28,7 +24,6 @@ async function getCityById(req, res) {
         res.status(500).render('500');
     }
 }
-
 module.exports = {
     getAllCities,
     getCityById
