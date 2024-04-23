@@ -1,0 +1,28 @@
+extends ../layout.pug
+
+block content
+    // Main title for the city data page
+    h3.text-center.mb-4.city-heading Country Information
+
+    // Table to display data
+    table
+        thead
+            tr
+                th Code
+                th Name
+                th Continent
+                th Region
+                th Population
+                th Capital
+        
+        // Body of the table containing the data
+        tbody
+            // Iteration over each country to populate the table
+            each country in countries
+                tr
+                    td= country.Code
+                    td= country.Name
+                    td= country.Continent
+                    td= country.Region
+                    td= country.Population.toLocaleString()
+                    td= country.Capital
