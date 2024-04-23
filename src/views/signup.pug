@@ -1,31 +1,30 @@
 extends layout.pug
 
-block content   
-    doctype html
-    html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        title Sign Up
-        link(rel="stylesheet" href="pstyle.css")
-    body
-        .logo
-        img(src="Group_Logo.png" alt="Logo" class="small_logo")
-        .container
-        h2 Sign Up
-        form(action="#")
-            input(type="text" name="firstname" placeholder="First Name" required)
-            input(type="text" name="lastname" placeholder="Last Name" required)
-            input(type="email" name="email" placeholder="Email" required)
-            select(name="country")
-            option(value="" disabled selected) Select your country
-            option(value="USA") United States
-            option(value="UK") United Kingdom
-            option(value="CA") Canada
-            option(value="AU") Australia
-            label Date of birth:
-            input(type="date" name="dob" value="")
-            .Button
-            button Click for SignUp
-        .about-us
-        a(href="https://github.com/SazamAmmy/Software-Engineering-Sprints--OrionEngine-Ensemble/blob/e0a81070437bd95ed511456111e8ef42ab702d3f/Program%20Files/Index.html") About Us
+block additionalStyles
+  link(rel="stylesheet", href="signup.css")
+  link(href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css', rel='stylesheet')
+
+block content
+  .video-bg
+    video.bg-video(autoplay, loop, muted)
+      source(src="IMG_2507.MOV", type="video/mp4")
+  .signup-wrapper
+    form(action="")
+      h1 Sign Up
+      .signup-input-box
+        input(type="text", placeholder="Username", required)
+        i.bx.bxs-user
+      .signup-input-box
+        input(type="email", placeholder="Email", required)
+        i.bx.bx-envelope
+      .signup-input-box
+        input(type="password", placeholder="Password", required)
+        i.bx.bxs-lock-alt
+      .signup-input-box
+        input(type="password", placeholder="Confirm Password", required)
+        i.bx.bxs-lock
+      button.signup-btn(type="submit") Sign Up
+      .register-link
+        p
+          | Already have an account? 
+          a(href="/login") Log In
