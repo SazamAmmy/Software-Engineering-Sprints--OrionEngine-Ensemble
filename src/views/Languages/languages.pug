@@ -1,0 +1,27 @@
+extends ../layout.pug
+
+block content
+    // Main title for the data page
+    h3.text-center.mb-4.city-heading Language Information
+
+    // Table to display data
+    table
+        thead
+            tr
+                th S.No.
+                th Language
+                th Number of Speakers
+                th % age of World Population
+        
+        // Body of the table containing the city data
+        tbody
+            // Serial number initialization for city entries
+            - var index = 0
+            // Iteration over each city to populate the table
+            each language in languages
+                - index++
+                tr
+                    td= index
+                    td= language.Language
+                    td= parseInt(language.TotalSpeakers).toLocaleString()
+                    td= (language.PercentageOfWorldPopulation*1).toFixed(2) + '%'

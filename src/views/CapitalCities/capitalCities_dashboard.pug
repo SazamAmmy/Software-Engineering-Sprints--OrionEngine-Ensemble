@@ -1,0 +1,27 @@
+extends ../layout.pug
+
+block additionalStyles
+  link(rel="stylesheet", href="sub_dashboard.css")
+  link(rel="stylesheet", href="style.css")
+block content
+  .video-bg
+    video.bg-video(autoplay, loop, muted)
+      source(src="IMG_2507.MOV", type="video/mp4")
+  main
+    h1 Capital City Report Dashboard
+    .data-sections 
+     a(href="/capitalCities/world")
+      section.data-card
+        img(src="world.png", alt="")
+        h2 In the world
+        p Explore population of all capital cities in the world
+     a(href="/capitalCities/continent/Europe") 
+      section.data-card  
+        img(src="continents.png", alt="")
+        h2 By Continents
+        p Get data of capital cities in different continents
+     a(href="/capitalCities/region/British Islands")   
+      section.data-card
+        img(src="region.png", alt="")
+        h2 By Region
+        p Discover regional population insights on capital cities

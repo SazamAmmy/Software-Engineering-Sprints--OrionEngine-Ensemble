@@ -1,0 +1,39 @@
+extends layout.pug
+
+block additionalStyles
+  link(rel="stylesheet", href="aboutus.css")
+
+block content
+  .video-bg
+    video.bg-video(autoplay, loop, muted)
+      source(src="IMG_2507.MOV", type="video/mp4")
+  .container
+    .about-section
+      .about-content
+        h2 About Us
+        p We are a group of passionate software engineers dedicated to creating innovative solutions and pushing the boundaries of technology. Our team is composed of individuals with diverse backgrounds and expertise, united by a common goal of delivering exceptional software products.
+    .team-section
+      h2 Our Team
+      .team-members
+        .team-member
+          img(src="team-member1.jpg", alt="Team Member 1")
+          h3 Sudip Thapa Magar
+          p Scrum Master
+        .team-member
+          img(src="team-member2.jpg", alt="Team Member 2")
+          h3 Rajababu Kushwaha
+          p Product Owner
+        .team-member
+          img(src="team-member3.jpg", alt="Team Member 3")
+          h3 Shahadat Hossain Joy
+          p Scrum
+        .team-member
+          img(src="team-member4.jpg", alt="Team Member 4")
+          h3 Ohiduzzaman Ohid
+          p Scrum
+        .team-member
+          img(src="team-member5.jpg", alt="Team Member 5")
+          h3 Khasan Kodirov
+          p Scrum
+    .github-link
+      a(href='https://github.com/SazamAmmy/Software-Engineering-Sprints--OrionEngine-Ensemble', target='_blank') Project GitHub Link

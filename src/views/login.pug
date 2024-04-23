@@ -1,0 +1,29 @@
+extends layout.pug
+
+block additionalStyles
+  link(rel="stylesheet", href="login.css")
+  link(href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css', rel='stylesheet')
+
+block content
+  .video-bg
+    video.bg-video(autoplay, loop, muted)
+      source(src="IMG_2507.MOV", type="video/mp4")
+  .login-wrapper
+    form(action="")
+      h1 Login
+      .login-input-box
+        input(type="text", placeholder="Username", required)
+        i.bx.bxs-user
+      .login-input-box
+        input(type="password", placeholder="Password", required)
+        i.bx.bxs-lock-alt
+      .remember-forgot
+        label
+          input(type="checkbox")
+          | Remember me
+        a(href="#") Forgot password?
+      button.login-btn(type="submit") Login
+      .register-link
+        p
+          | Don't have an account? 
+          a(href="/signup") Register
