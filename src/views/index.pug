@@ -1,0 +1,40 @@
+extends layout.pug
+
+block additionalStyles
+  link(rel="stylesheet", href="index.css")
+
+block content
+  .video-bg
+    video.bg-video(autoplay, loop, muted)
+      source(src="IMG_2234.MOV", type="video/mp4")
+  main
+    section.hero
+      .hero-content
+        h1 Explore Population Data
+        p Find detailed information about the population of any country or region.
+        div
+          a.get-started(href="/sub_dashboard") Get Started
+    section.featured-data
+      h2 Featured Data
+      p We are the leading population tracking system in the market, offering unparalleled quality service. Our innovative solutions provide real-time insights and analytics, helping businesses and organizations make informed decisions based on accurate population data. Trust us to empower your operations with the data you need when you need it.
+      .data-cards
+        .data-card
+          h3 Countries
+          p Explore detailed population data for individual countries.
+          a(href="/sub_dashboard") Learn More
+        .data-card
+          h3 Cities
+          p Get the latest population statistics of cities.
+          a(href="/sub_dashboard") Learn More
+        .data-card
+          h3 Capital cities
+          p Explore capital cities 
+          a(href="/sub_dashboard") Learn More
+        .data-card
+          h3 Continents
+          p Get population data of continents
+          a(href="/sub_dashboard") Learn More
+        .data-card
+          h3 Languages
+          p Explore the list of popular languages
+          a(href="/sub_dashboard") Learn More
