@@ -1,0 +1,19 @@
+extends layout.pug
+
+block additionalStyles
+  link(rel="stylesheet", href="contactus.css")
+
+block content
+  .video-bg
+    video.bg-video(autoplay, loop, muted)
+      source(src="IMG_2507.MOV", type="video/mp4")
+  .contact-wrapper
+    form(action="")
+      h1 Contact Us
+      .contact-input-box
+        input(type="text", placeholder="Name", required)
+      .contact-input-box
+        input(type="email", placeholder="Email", required)
+      .contact-input-box
+        textarea(placeholder="Message", required)
+      button.contact-btn(type="submit") Send Message
