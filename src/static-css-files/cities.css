@@ -1,0 +1,30 @@
+/* CSS for table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black; /* Add black border around the table */
+    padding: 10px; /* Add padding to the sides of the entire table */
+    margin: 20px;
+  }
+  
+  /* CSS for table headers */
+  th {
+    background-color: #f8f9fa;
+    color: #212529;
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6;
+  }
+  
+  /* CSS for table rows */
+  tr:nth-child(even) {
+    background-color: #f1f1f1; /* Alternate row shading */
+  }
+  
+  /* CSS for table data cells */
+  td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
