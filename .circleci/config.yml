@@ -1,21 +1,36 @@
 version: 2.1
 
 orbs:
-  node: circleci/node@4.7.0
+  docker: circleci/docker@1.7.0
 
 jobs:
   build-and-test:
     docker:
-      - image: 'cimg/node:16.13'
+      - image: cimg/base:stable
     steps:
       - checkout
-      - node/install-packages:
-          pkg-manager: npm
+      - setup_remote_docker:
+          docker_layer_caching: true
       - run:
-          name: Run tests
-          command: npm test
+          name: Install Docker Compose
+          command: |
+            sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+            sudo chmod +x /usr/local/bin/docker-compose
+      - run:
+          name: Build and Run Docker Compose
+          command: |
+            docker-compose up -d
+      - run:
+          name: Show running containers
+          command: |
+            docker-compose ps
+      - run:
+          name: Check webserver
+          command: |
+            curl --retry 10 --retry-delay 5 -v http://localhost:3000
 
 workflows:
-  build-and-test-workflow:
+  version: 2
+  build_and_test:
     jobs:
       - build-and-test
