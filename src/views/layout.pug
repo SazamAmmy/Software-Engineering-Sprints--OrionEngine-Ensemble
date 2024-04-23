@@ -1,14 +1,38 @@
-// layout.pug
-
 doctype html
 html
   head
-    link(rel="stylesheet", href="/nav.css")
+    title Population Search Engine
+    link(rel="stylesheet", href="/style.css")
+    link(rel="stylesheet", href="/navbar.css")
     link(rel="stylesheet", href="/cities.css")
-    block head
+    link(rel="stylesheet", href="/about_us.css")
+    link(rel="stylesheet", href="/contact_us.css")
+    link(rel="stylesheet", href="/login.css")
+    link(rel="stylesheet", href="/signup.css")
+    link(rel="stylesheet", href="/sub_dashboard.css") 
+    block additionalStyles
   body
-    header.site-header
-      include mixins/nav
-      +navigation()
-    main.layout-content
+    header
+      .nav-container
+        nav.navbar
+          img.logo(src="/Group_Logo.png", alt="OrionEngine Ensemble Logo")
+          #mobile-menu.menu-toggle
+            span.bar
+            span.bar
+            span.bar
+          ul.nav-menu
+            li
+              a.nav-links(href="/") Home
+            li
+              a.nav-links(href="/sub_dashboard") Dashboard
+            li
+              a.nav-links(href="/about_us") About Us
+            li
+              a.nav-links(href="/contact_us") Contact Us
+            li
+              a.nav-links.nav-links-btn(href="/login") Log In
+    main
       block content
+    footer
+      p &copy; 2024 Population Search Engine. All rights reserved.
+    script(src="views/app.js")
