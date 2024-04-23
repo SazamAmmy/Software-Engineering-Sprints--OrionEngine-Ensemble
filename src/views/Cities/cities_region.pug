@@ -1,0 +1,40 @@
+extends ../layout.pug
+
+block content
+    // Main title for the city data page
+    h3.text-center.mb-4.city-heading City Information
+
+    form(id="cityForm")
+        input(type="text", id="cityInput", placeholder="Enter Region")
+        button(type="submit") Go
+
+    script.
+      document.getElementById('cityForm').onsubmit = function() {
+        var value = document.getElementById('cityInput').value;
+        window.location.href = `/cities/region/${value}`;
+        return false; // Prevent default form submission
+      }
+
+    // Table to display city data
+    table
+        thead
+            tr
+                th Index
+                th Country-Code
+                th Name
+                th District
+                th Population
+        
+        // Body of the table containing the city data
+        tbody
+            // Serial number initialization for city entries
+            - var index = 0
+            // Iteration over each city to populate the table
+            each city in cities
+                - index++
+                tr
+                    td= index
+                    td= city.CountryCode
+                    td= city.Name 
+                    td= city.District
+                    td= city.Population.toLocaleString()

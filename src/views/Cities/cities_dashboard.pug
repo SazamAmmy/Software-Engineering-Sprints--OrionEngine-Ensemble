@@ -1,0 +1,37 @@
+extends ../layout.pug
+
+block additionalStyles
+  link(rel="stylesheet", href="sub_dashboard.css")
+  link(rel="stylesheet", href="style.css")
+block content
+  .video-bg
+    video.bg-video(autoplay, loop, muted)
+      source(src="IMG_2507.MOV", type="video/mp4")
+  main
+    h1 City Report Dashboard
+    .data-sections 
+     a(href="/cities/world")
+      section.data-card
+        img(src="world.png", alt="")
+        h2 In the world
+        p Explore population of all cities in the world
+     a(href="/cities/continent/Europe") 
+      section.data-card  
+        img(src="continents.png", alt="")
+        h2 By Continents
+        p Get data of cities in different continents
+     a(href="/cities/region/British Islands")   
+      section.data-card
+        img(src="region.png", alt="")
+        h2 By Region
+        p Discover regional city population insights
+     a(href="/cities/countryCode/GBR")
+      section.data-card
+        img(src="countries.png", alt="")
+        h2 By Country
+        p Explore the population of cities in various countries
+     a(href="/cities/district/England")
+      section.data-card
+        img(src="district.png", alt="")
+        h2 By District
+        p Drill down into district-level data
